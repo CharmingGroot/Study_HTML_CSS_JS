@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .con {
+        display: grid;
+        height: 200px;
+        border-style: solid;
+      }
+
+      .item {
+        width: 200px;
+        height: 50px;
+      }
+      .flex-start {
+        justify-self: flex-start;
+      }
+
+      .flex-end {
+        justify-self: flex-end;
+      }
+
+      .stretch {
+        justify-self: stretch;
+      }
+
+      .baseline {
+        justify-self: baseline;
+      }
+      .center {
+        justify-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      1. item : justify-self : 개별 item을 주축 기준으로 정렬하기 위한 속성,
+      display grid에서 사용가능하다.
+    </h1>
+    <h2>align-self : flex-start</h2>
+    <div class="con">
+      <div class="item flex-start" style="background-color: rgb(251, 176, 176)">
+        flex-start
+      </div>
+      <div class="flex-end" style="background-color: rgb(224, 255, 171)">
+        flex-end
+      </div>
+      <div class="stretch" style="background-color: rgb(156, 222, 255)">
+        stretch
+      </div>
+      <div class="center" style="background-color: rgb(245, 155, 239)">
+        center
+      </div>
+      <div class="baseline" style="background-color: rgb(160, 108, 108)">
+        baseline
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <style>
+      html {
+        clear: both;
+      }
+      .wrap > div {
+        width: 200px;
+        height: 50px;
+        float: left;
+      }
+      .wrap:hover .horize_1 {
+        transition-duration: 1s;
+        transform: translateX(-50%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_2 {
+        transition-duration: 2s;
+        transform: translateX(-100%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_3 {
+        transition-duration: 3s;
+        transform: translateX(-150%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_4 {
+        transition-duration: 4s;
+        transform: translateX(-200%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_5 {
+        transition-duration: 5s;
+        transform: translateX(-250%);
+        position: relative;
+      }
+      .wrap:hover .horize_6 {
+        transition-duration: 1s;
+        transform: translateX(-50%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_7 {
+        transition-duration: 2s;
+        transform: translateX(-100%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_8 {
+        transition-duration: 3s;
+        transform: translateX(-150%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_9 {
+        transition-duration: 4s;
+        transform: translateX(-200%);
+        position: relative;
+      }
+
+      .wrap:hover .horize_10 {
+        transition-duration: 5s;
+        transform: translateX(-250%);
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>z-index</h1>
+    <pre>
+      z-index : 요소의 z축을 지정
+      position static에서는 사용불가
+
+      html 요소가 쌓이는 맥락
+
+      1. 브라우저가 먼저 랜더링하는 요소가 낮은 z축값을 가진다.
+          * 부모요소가 자식요소보다 z축이 낮다.
+          * 형제요소라면 코드라인상으로 먼저 작성된 요소가 나중에 작성된 요소보다 z축이 낮다.
+          * position 값이 static이 아닌 요소가 position 속성이 static인 요소보다 z축이 높다
+            position 속성이 지정되지 않은 요소를 브라우저가 먼저 렌더링한다.
+
+          z-index를 사용해 특정요소를 상단에 배치하고 싶다면, z-index값을 아주 크게 잡는게 좋다.
+  </pre
+    >
+
+    <div class="wrap clear">
+      <div class="horize_1" style="background-color: red; z-index: 5">
+        horize_1
+      </div>
+      <div class="horize_2" style="background-color: yellow; z-index: 4">
+        horize_2
+      </div>
+      <div class="horize_3" style="background-color: green; z-index: 3">
+        horize_3
+      </div>
+      <div class="horize_4" style="background-color: blue; z-index: 2">
+        horize_4
+      </div>
+      <div class="horize_5" style="background-color: aquamarine; z-index: 1">
+        horize_5
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="horize_6" style="background-color: red; z-index: 1">
+        horize_1
+      </div>
+      <div class="horize_7" style="background-color: yellow; z-index: 2">
+        horize_2
+      </div>
+      <div class="horize_8" style="background-color: green; z-index: 3">
+        horize_3
+      </div>
+      <div class="horize_9" style="background-color: blue; z-index: 4">
+        horize_4
+      </div>
+      <div class="horize_10" style="background-color: aquamarine; z-index: 5">
+        horize_5
+      </div>
+    </div>
+  </body>
+</html>

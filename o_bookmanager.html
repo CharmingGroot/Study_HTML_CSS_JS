@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="resources\icon\fontawesome-free-6.2.1-web\css\fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="resources\icon\fontawesome-free-6.2.1-web\css\brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="resources\icon\fontawesome-free-6.2.1-web\css\solid.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/css/reset.css" />
+    <link rel="stylesheet" href="resources/css/bookmanager.css" />
+    <style>
+      /* 레이아웃 잡을 때 사용할 div 그림자 */
+      div {
+        box-shadow: 0 0 0 3px lightblue inset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">MC</div>
+      <div class="user">
+        <ul class="navbar_menu">
+          <li><button>회원가입</button></li>
+          <li><button>로그인</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section">
+      <div class="aside">
+        <div class="icon_search">
+          <i class="fa-solid fa-magnifying-glass">도서검색</i>
+        </div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping">장바구니</i>
+        </div>
+        <div class="notice">
+          <i class="fa-solid fa-bullhorn">공지사항</i>
+        </div>
+        <div class="about_us">
+          <i class="fa-solid fa-users">about us</i>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="main_search">
+          <div class="search_book">
+            <div
+              class="mclib"
+              style="background-color: antiquewhite; width: 75vw; height: 10vh"
+            >
+              MC 도서관
+            </div>
+            <button type="submit" value="검색">검색</button>
+            <input type="text" value="도서명" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="content_list">
+          <li>도서검색</li>
+          <li>장바구니</li>
+          <li>공지사항</li>
+          <li>about us</li>
+        </div>
+      </div>
+      <div class="book">
+        <h4>최근 인기 도서</h4>
+        <div class="current">
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+        </div>
+        <h4>스테디 셀러</h4>
+        <div class="steady">
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+        </div>
+        <h4>신간 도서</h4>
+        <div class="new">
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+        </div>
+        <h4>최근 대출 도서</h4>
+        <div class="recent_rent">
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+          <li>책</li>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>

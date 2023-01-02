@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap_div{
+        width: 80%;
+        height: 950px;
+        background-color: rgb(143, 185, 199);
+        position: relative;
+        left: 20%;
+      }
+
+      .wrap_div div{
+        /* 부모요소의 너비의 20%가 됨 */
+        width: 20%;
+        
+        height: 100px;
+        margin: 0 1% 1% 0;
+        font-size: 1vw;
+      }
+
+      .rel{
+        position: relative;
+        background-color: rgb(225, 125, 125);
+      }
+
+      .abs{
+        position: absolute;
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>position : 요소가 배치되는 위치를 지정하는 속성</h1>
+
+    <pre>
+      position:static   : 기본값. 브라우저가 배치하는 위치에 요소가 배치됨.
+                          요소의 위치를 지정하기 위한, top, bottom, left, right, z-index 속성을 사용할 수 있음.
+    
+      position:relative : 브라우저가 배치하는 위치에 요소가 배치됨.
+                          요소의 위치를 지정하기 위한 top, bottom, left, right, z-index 속성을 사용할 수 있음.
+
+      position:absolute : 부모요소의 좌측상단에 요소가 배치된다.
+                          요소의 위치를 지정하기 위한, top, bottom, left, right, z-index 속성을 사용할 수 있다.
+                          positon:absolute인 요소는 normal flow에서 제외된다.
+
+      position:fixed    : 스크롤과 상관없이 화면의 좌측 상단을 기준으로 요소개 배치됨.
+                        
+     </pre>
+
+     <h1>top, bottom, left, right</h1>
+     <pre>
+       top: 위에서 아래로
+       bottom : 아래에서 위로
+       left : 왼쪽에서 오른쪽으로
+       right : 오른쪽에서 왼쪽으로
+     </pre>
+
+     <div class="wrap_div">
+      <div class="rel" style="right: 5%;">rel, right 5%</div>
+      <div class="rel"style="top: 5%;">rel, top 5%</div>
+      <div class="rel"style="top: 5%; right: 5px;">rel, right 5% top 5%</div>
+      <div class="rel"style="left: 26%; bottom:2%;">rel, left 26% bottom 2%</div>
+
+      <div class="abs" style="right: 5%;">abs, right 5%</div>
+      <div class="abs"style="top: 5%;">abs, top 5%</div>
+      <div class="abs"style="top: 5%; right: 5px;">abs, right 5% top 5%</div>
+      <div class="abs"style="left: 26%; bottom:2%;">abs, left 26% bottom 2%</div>
+     </div>
+
+
+  </body>
+</html>

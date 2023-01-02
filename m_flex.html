@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .con {
+        display: flex;
+        height: 200px;
+        border-style: solid;
+      }
+
+      .item {
+        width: 200px;
+        height: 50px;
+      }
+      .flex-start {
+        align-self: flex-start;
+      }
+
+      .flex-end {
+        align-self: flex-end;
+      }
+
+      .stretch {
+        align-self: stretch;
+      }
+
+      .baseline {
+        align-self: baseline;
+      }
+      .center {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      1. item : align-self : 개별 item을 교차축 기준으로 정렬하기 위한 속성,
+      align-item 보다 우선순위가 높다.
+    </h1>
+    <h2>align-self : flex-start</h2>
+    <div class="con">
+      <div class="item flex-start" style="background-color: red">
+        flex-start
+      </div>
+      <div class="flex-end" style="background-color: rgb(177, 231, 85)">
+        flex-end
+      </div>
+      <div class="stretch" style="background-color: rgb(62, 34, 34)">
+        stretch
+      </div>
+      <div class="center" style="background-color: rgb(25, 34, 208)">
+        center
+      </div>
+      <div class="baseline" style="background-color: rgb(27, 216, 93)">
+        baseline
+      </div>
+    </div>
+  </body>
+</html>

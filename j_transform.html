@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 370px;
+        height: 50px;
+        background-color: royalblue;
+        color: antiquewhite;
+        font-size: 1.5vw;
+        margin-bottom: 10px;
+      }
+
+      #translateX:hover {
+        /* 요소의 너비의 100%만큼 x축으로 이동한다. */
+        transform: translateX(80%);
+      }
+
+      #translateY:hover {
+        /* 요소의 너비의 %만큼 y축으로 이동한다. */
+        transform: translateY(-80%);
+      }
+
+      #translate:hover {
+        /* 요소의 너비의 %만큼 y축으로 이동한다. */
+        transform: translate(50%, 50%);
+      }
+
+      #rotate:hover {
+        transform: rotate(180deg);
+      }
+
+      #skew:hover {
+        transform: skew(150deg, 150deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>transform</h1>
+    <h2>transform : translate</h2>
+    <div id="translateX">translate(x)</div>
+    <div id="translateY">translate(y)</div>
+    <div id="translate">translate(x,y)</div>
+
+    <h2>
+      <div id="rotate">rotate 회전</div>
+    </h2>
+
+    <h2><div id="skew">skew(deg,deg) : 회전</div></h2>
+  </body>
+</html>

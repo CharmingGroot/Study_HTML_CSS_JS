@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+html {
+  text-align: center;
+  line-height: normal;
+  margin: auto 0;
+  vertical-align: middle;
+  
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  background-color: lightgreen;
+  padding: 8px 16px;
+}
+
+.logo{
+  display: flex;
+  padding-right: 0;
+  padding: 8px 16px 8px 16px;
+}
+
+.logo:hover{
+  background-color: cadetblue;
+
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu > li {
+  padding: 8px 16px 8px 16px;
+}
+
+
+.navbar_menu li:hover {
+  background-color: cadetblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: lightcoral;
+  height: 10vh;
+}
+
+.section{
+  height: 85vh;
+}
+
+.aside{
+  position: fixed;
+  height: 30vh;
+  width: 5vw;
+  background-color: wheat;
+  top: 50%;
+  left: 2.5%;
+  transform: translateY(-50%);
+}
+
+.aside > div {
+  background-color: aqua;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.aside > div > i {
+  font-size: 8px;
+
+}
+
+
+.content{
+  width: 95vw;
+  height: 30%;
+  margin: auto;
+  
+  
+}
+
+.main_search{
+  display: flex;
+  
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.content_list{
+  display: flex;
+  margin: 15px 15px 15px 15px;
+}
+
+.content_list > li {
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+}
+
+.book {
+  height: 62.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  overflow: scroll;
+}
+
+.current > li, .steady > li , .new > li, .recent_rent > li{
+  flex-direction: row;
+  width: 60px;
+  height: 85px;
+  background-color: rgb(151, 238, 238);
+  margin: 0 60px 0 60px;
+}
+
+.current {
+  display: flex;
+}
+
+.current > li {
+  list-style: none;
+}
+
+.steady {
+  display: flex;
+}
+
+.steady > li {
+  list-style: none;
+}
+
+.new {
+  display: flex;
+}
+
+.new > li {
+  list-style: none;
+}
+
+.recent_rent {
+  display: flex;
+}
+
+.recent_rent > li {
+  list-style: none;
+}
