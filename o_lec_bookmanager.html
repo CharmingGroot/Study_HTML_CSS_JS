@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="resources\icon\fontawesome-free-6.2.1-web\css\fontawesome.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/css/reset.css" />
+    <link
+      href="resources\icon\fontawesome-free-6.2.1-web\css\brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="resources\icon\fontawesome-free-6.2.1-web\css\solid.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/resources/css/lec_bookmanager.css" />
+    <link rel="stylesheet" href="/CSS/common.css" />
+    <link rel="stylesheet" href="/resources/css/mob_bm.css" />
+    <style>
+      div {
+        box-shadow: 0 0 0 1px lightblue inset;
+      }
+    </style>
+
+    <!-- 
+      BEM명명규칙
+      Block     : 기능적으로 독립적인 페이지 구성요소
+                ex) header, user, serarch
+      Element   : block을 구성하는 요소
+                ex) input, btn, img, item
+
+      Modifier  : block의 상태
+                 ex) blue, bold, checked, selected . . .
+
+      * 각 Block과 Element는 다른 Block이나 Element를 포함할 수 있음
+      * Block과 Element는 __(언더바 2개)로 연결, Element와 Modifier는 --로 연결
+        ex) main__inp--focus
+
+      반드시 모든 요소를 BEM으로 작성할 필요는 없다.
+
+
+
+      미디어 쿼리 : 단말기의 종류나 화면의 수치에 따라 다른스타일을 요소에 적용할 수 있게끔 해주는 구문
+      작성법 : 
+              @media : [not/only][매체유형 and ] (표현식){css 코드}
+              
+              매체유형       : all, print(인쇄), screen(웹또는모바일), speech(스크린리더)
+              미디어쿼리 속성 : width, height, aspect-ratio(화면비), device-width, device-height, device-aspect-ratio
+
+              표현식 : 표현식으 ㅣ결과가 true면 media query의 style이 적용되고, false라면 mediaquery style 무시
+
+              미디어쿼리 4 이전 : min/ max
+                              : min-width : 500px
+                              : max-aspect-ratio : 5/4 => 가로 세로 비율을 5:4 로 지정
+
+              미디어쿼리 4 : 비교연산자 사용가능
+                            : min-width: 500px => width > 500px
+
+              not : 논리부정, 표현식의 결과부정
+              only : true일 때, style지정, 구형 브라우저에서 사용할 때 지정
+
+     -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo row"><span class="font-tit">MC</span></div>
+      <div class="user row">
+        <a>sign-up</a> <a>sign-in</a><i class="fa-solid fa-bars mob-menu"></i>
+      </div>
+    </header>
+    <section class="section">
+      <nav class="aside snb col">
+        <div class="snb__tit row">
+          <span>Menu</span>
+        </div>
+        <div class="sub__items col">
+          <li class="sub__item col">
+            <i class="fa-solid fa-magnifying-glass font-xl"></i>
+            <span>검색</span>
+          </li>
+          <li class="sub__item col">
+            <i class="fa-solid fa-cart-shopping font-xl"></i>
+            <span>장바구니</span>
+          </li>
+          <li class="sub__item col">
+            <i class="fa-solid fa-bullhorn font-xl"></i>
+            <span>공지사항</span>
+          </li>
+          <li class="sub__item col">
+            <i class="fa-solid fa-users font-xl"></i>
+            <span>about us</span>
+          </li>
+        </div>
+      </nav>
+
+      <div class="wrap-main col">
+        <div class="main col">
+          <div class="main__tit row">
+            <span>MC LIBRARY</span>
+          </div>
+          <div class="main__form row">
+            <label class="main__form__label font-tit row"> 검색 </label>
+            <input
+              type="text"
+              placeholder="Enter Book Name"
+              class="main__form__inp"
+            />
+            <button type="submit" class="main__form__btn">
+              <i class="fa-solid fa-magnifying-glass font-xl font-lg--b"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="gnb row">
+          <li class="gnb__item col">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="font-tit">Search</span>
+          </li>
+          <li class="gnb__item col">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="font-tit">Cart</span>
+          </li>
+          <li class="gnb__item col">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span class="font-tit">Notice</span>
+          </li>
+          <li class="gnb__item col">
+            <i class="fa-solid fa-users"></i>
+            <span class="font-tit">about us</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="book-cate col">
+        <div class="wrap_books col">
+          <div class="book-cate__tit row">
+            <span class="font-xxl--b">인기 도서</span>
+          </div>
+          <div class="books row">
+            <div class="book col">
+              <img
+                class="book__img"
+                src="./resources/image/KakaoTalk_20230102_161026806.jpg"
+              />
+              <span>Nudge</span>
+            </div>
+            <div class="book col">
+              <img
+                class="book__img"
+                src="./resources/image/KakaoTalk_20230102_161026806.jpg"
+              />
+              <span>Nudge</span>
+            </div>
+            <div class="book col">
+              <img
+                class="book__img"
+                src="./resources/image/KakaoTalk_20230102_161026806.jpg"
+              />
+              <span>Nudge</span>
+            </div>
+            <div class="book col">
+              <img
+                class="book__img"
+                src="./resources/image/KakaoTalk_20230102_161026806.jpg"
+              />
+              <span>Nudge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer"></div>
+  </body>
+</html>

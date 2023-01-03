@@ -1,0 +1,61 @@
+@charset "utf-8";
+@media(max-width:1000px){
+
+  html{
+    font-size: 10px;
+
+  }
+
+  .aside{
+    display: none;
+  }
+
+  .gnb{
+    display: none;
+  }
+  .user > a {
+    display: none;
+  }
+
+  body, body * {
+    min-width: 0 !important;
+  }
+
+  .main{
+    min-height: 0px !important;
+  }
+
+  .mob-menu{
+    display: block;
+  }
+
+  .wrap-main{
+    background-image: url(/resources/image/KakaoTalk_20230102_161026877.jpg);
+    min-height: 200px;
+  }
+
+
+  .book-cate__tit{
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .book-cate__tit > span{
+    
+     left: 0px;
+  }
+
+  .books{
+    flex-wrap: wrap;
+  }
+
+  .book{
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .book__img{
+    width: 80%;
+  }
+
+
+}
